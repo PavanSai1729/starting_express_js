@@ -11,7 +11,7 @@ const app = express();
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.use("/admin", adminRoutes);
-app.use(shopRoutes);
+app.use("/shop", shopRoutes);
 
 
 app.use((req,res,next) => {
